@@ -1,9 +1,10 @@
-package net.royalsaga.minecraft.commonutils.extensions.bukkit
+package net.royalsaga.minecraft.commonutils.extensions.bukkit.configuration
 
 import com.google.common.base.Enums
 import me.mattstudios.mfgui.gui.components.ItemBuilder
 import me.mattstudios.mfgui.gui.components.xseries.XMaterial
 import net.royalsaga.minecraft.commonutils.extensions.collections.color
+import net.royalsaga.minecraft.commonutils.extensions.color
 import net.royalsaga.minecraft.commonutils.extensions.mfgui.addEnchantments
 import org.bukkit.Material
 import org.bukkit.configuration.ConfigurationSection
@@ -12,7 +13,7 @@ import org.bukkit.inventory.ItemFlag
 import org.bukkit.inventory.ItemStack
 
 @Suppress("DEPRECATION")
-fun ConfigurationSection.toItem(rgb: Boolean = false, defaultMaterial: Material = Material.PAPER): ItemStack {
+fun ConfigurationSection.toItemStack(rgb: Boolean = false, defaultMaterial: Material = Material.PAPER): ItemStack {
     val flags = getStringList("flags")
         .mapNotNull { Enums.getIfPresent(ItemFlag::class.java, it).orNull() }
         .toTypedArray()

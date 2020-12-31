@@ -6,11 +6,10 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.20'
     id 'fr.il_totore.manadrop' version '0.4.1-SNAPSHOT'
     id 'maven-publish'
-    id 'org.jetbrains.dokka' version '1.4.20'
 }
 
 group 'net.royalsaga.minecraft'
-version '0.0.11'
+version '0.0.1'
 
 def GITHUB_ORG = 'RoyalSaga'
 def GITHUB_REPO = project.name
@@ -47,42 +46,6 @@ compileKotlin.kotlinOptions {
     javaParameters = true
 }
 
-/*
-java {
-    withJavadocJar()
-    withSourcesJar()
-}*/
-
-/*
-javadoc {
-    options.encoding("UTF-8")
-
-    if (options instanceof StandardJavadocDocletOptions) {
-        def opt = options as StandardJavadocDocletOptions
-
-        opt.links(
-                "https://javadoc.io/doc/org.jetbrains/annotations/20.1.0/"
-        )
-
-        if (JavaVersion.current().isJava9Compatible()) {
-            opt.addBooleanOption("html5", true)
-            opt.addStringOption("-release", "8")
-        }
-
-        if (JavaVersion.current().isJava11Compatible()) {
-            opt.addBooleanOption("-no-module-directories", true)
-        }
-    }
-}
- */
-
-/*
-task packageJavadoc(type: Jar, dependsOn: dokkaJavadoc) {
-    archiveClassifier.set('javadoc')
-    from "$buildDir/dokka/javadoc"
-}
-*/
-
 task packageJavadoc(type: Jar, dependsOn: javadoc) {
     archiveClassifier.set('javadoc')
 }
@@ -115,8 +78,8 @@ task packageSources(type: Jar) {
 
 publishing {
     publications {
-        gpr(MavenPublication) {
-            from components.java
+        mavenKotlin(MavenPublication) {
+            from components.kotlin
 
             artifact packageSources
             artifact packageJavadoc

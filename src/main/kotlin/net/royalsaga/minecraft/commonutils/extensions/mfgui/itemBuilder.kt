@@ -1,8 +1,8 @@
 package net.royalsaga.minecraft.commonutils.extensions.mfgui
 
 import me.mattstudios.mfgui.gui.components.ItemBuilder
-import net.royalsaga.minecraft.commonutils.extensions.bukkit.color
 import net.royalsaga.minecraft.commonutils.extensions.collections.color
+import net.royalsaga.minecraft.commonutils.extensions.color
 import org.bukkit.enchantments.Enchantment
 
 fun ItemBuilder.setName(name: String, color: Boolean, rgb: Boolean = color): ItemBuilder {
