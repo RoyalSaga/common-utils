@@ -1,4 +1,4 @@
-package net.royalsaga.minecraft.commonutils.extensions.bukkit.permissions
+package net.royalsaga.minecraft.commonutils.bukkit.permissions
 
 import org.bukkit.permissions.Permissible
 

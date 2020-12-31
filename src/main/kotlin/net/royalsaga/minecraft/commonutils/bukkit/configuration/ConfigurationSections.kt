@@ -1,11 +1,11 @@
-package net.royalsaga.minecraft.commonutils.extensions.bukkit.configuration
+package net.royalsaga.minecraft.commonutils.bukkit.configuration
 
 import com.google.common.base.Enums
 import me.mattstudios.mfgui.gui.components.ItemBuilder
 import me.mattstudios.mfgui.gui.components.xseries.XMaterial
-import net.royalsaga.minecraft.commonutils.extensions.collections.color
-import net.royalsaga.minecraft.commonutils.extensions.color
-import net.royalsaga.minecraft.commonutils.extensions.mfgui.addEnchantments
+import net.royalsaga.minecraft.commonutils.collections.color
+import net.royalsaga.minecraft.commonutils.color
+import net.royalsaga.minecraft.commonutils.mfgui.addEnchantments
 import org.bukkit.Material
 import org.bukkit.configuration.ConfigurationSection
 import org.bukkit.enchantments.Enchantment

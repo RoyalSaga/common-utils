@@ -1,7 +1,7 @@
-package net.royalsaga.minecraft.commonutils.extensions.collections
+package net.royalsaga.minecraft.commonutils.collections
 
-import net.royalsaga.minecraft.commonutils.extensions.color
-import net.royalsaga.minecraft.commonutils.extensions.toItemStack
+import net.royalsaga.minecraft.commonutils.color
+import net.royalsaga.minecraft.commonutils.toItemStack
 import org.bukkit.entity.Player
 import org.bukkit.inventory.ItemStack
 

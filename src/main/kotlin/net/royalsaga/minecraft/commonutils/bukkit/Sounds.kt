@@ -1,4 +1,4 @@
-package net.royalsaga.minecraft.commonutils.extensions.bukkit
+package net.royalsaga.minecraft.commonutils.bukkit
 
 import org.bukkit.Sound
 import org.bukkit.SoundCategory

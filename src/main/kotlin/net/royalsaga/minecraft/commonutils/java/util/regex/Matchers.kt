@@ -1,4 +1,4 @@
-package net.royalsaga.minecraft.commonutils.extensions.java.util.regex
+package net.royalsaga.minecraft.commonutils.java.util.regex
 
 import java.util.regex.Matcher
 

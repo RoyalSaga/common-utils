@@ -1,4 +1,4 @@
-package net.royalsaga.minecraft.commonutils.extensions.bukkit.inventory
+package net.royalsaga.minecraft.commonutils.bukkit.inventory
 
 import org.bukkit.entity.Player
 import org.bukkit.inventory.ItemStack

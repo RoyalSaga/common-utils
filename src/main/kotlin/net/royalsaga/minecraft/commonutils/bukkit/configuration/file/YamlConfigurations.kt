@@ -1,4 +1,4 @@
-package net.royalsaga.minecraft.commonutils.extensions.bukkit.configuration.file
+package net.royalsaga.minecraft.commonutils.bukkit.configuration.file
 
 import org.bukkit.configuration.file.YamlConfiguration
 import java.io.File

@@ -1,11 +1,11 @@
-package net.royalsaga.minecraft.commonutils.extensions
+package net.royalsaga.minecraft.commonutils
 
 import com.google.common.base.Enums
 import me.mattstudios.mfgui.gui.components.ItemBuilder
 import me.mattstudios.mfgui.gui.components.xseries.XMaterial
 import net.md_5.bungee.api.ChatColor
-import net.royalsaga.minecraft.commonutils.extensions.java.util.regex.get
-import net.royalsaga.minecraft.commonutils.extensions.mfgui.addEnchantments
+import net.royalsaga.minecraft.commonutils.java.util.regex.get
+import net.royalsaga.minecraft.commonutils.mfgui.addEnchantments
 import org.apache.commons.lang.StringUtils
 import org.bukkit.Material
 import org.bukkit.enchantments.Enchantment
